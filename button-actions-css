@@ -3,11 +3,9 @@ body {
 }
 
 button {
-	font-family: "Nunito", sans-serif;
-	width: 120px;
 	position: absolute;
 	top: 50px;
-	transform: translateX(-50%);
+	width: 120px;
 	padding: 10px 30px;
 	background-color: transparent;
 	color: #fff;
@@ -16,8 +14,10 @@ button {
 	letter-spacing: 2px;
 	border-color: #fff;
 	border-radius: 5px;
-	cursor: pointer;
 	border: 2px solid;
+	cursor: pointer;
+	transform: translateX(-50%);
+	font-family: "Nunito", sans-serif;
 }
 
 button:hover {
@@ -41,9 +41,9 @@ div {
 	top: 150px;
 	width: 100px;
 	height: 100px;
-	transform: translateX(-50%);
 	border-radius: 25px;
 	transition: 1s;
+	transform: translateX(-50%);
 }
 
 .square-blue {
