@@ -1,0 +1,25 @@
+const sizeUp = document.querySelector(".size-up");
+const sizeDown = document.querySelector(".size-down");
+const color = document.querySelector(".color");
+const p = document.querySelector("p");
+
+const colors = ['royalblue', 'red', 'lime', 'gold']
+
+let fontSize = 20;
+
+function bigText() {
+	fontSize += 5;
+	p.style.fontSize = fontSize + "px";
+}
+function smallText() {
+	fontSize -= 5;
+	p.style.fontSize = fontSize + "px";
+}
+
+function colorText() {
+	p.style.color = colors[1]
+}
+
+sizeUp.addEventListener("click", bigText);
+sizeDown.addEventListener("click", smallText);
+color.addEventListener("click", colorText);
