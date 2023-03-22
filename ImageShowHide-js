@@ -1,0 +1,15 @@
+const arrowIcon = document.querySelector(".fas");
+const image1 = document.querySelector(".item1");
+const btn = document.querySelector(".arrow");
+
+function show() {
+	image1.classList.toggle("show");
+
+	if (image1.classList.contains("show")) {
+		arrowIcon.style.rotate = "180deg";
+	} else {
+		arrowIcon.style.rotate = "0deg";
+	}
+}
+
+btn.addEventListener("click", show);
