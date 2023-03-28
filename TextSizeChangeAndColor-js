@@ -1,24 +1,37 @@
-const sizeUp = document.querySelector(".size-up");
-const sizeDown = document.querySelector(".size-down");
+const sizeUp = document.querySelector(".sizeUp");
+const sizeDown = document.querySelector(".sizeDown");
 const color = document.querySelector(".color");
 const p = document.querySelector("p");
 
-const colors = ['royalblue', 'red', 'lime', 'gold']
+const colors = ["royalblue", "red", "lime", "gold"];
 
 let fontSize = 20;
 
 function bigText() {
-	fontSize += 5;
-	p.style.fontSize = fontSize + "px";
+	if (fontSize <= 50 && fontSize >= 0) {
+		fontSize += 5;
+		p.style.fontSize = fontSize + "px";
+	} else {
+		alert("Nie można bardziej powiekszyć tekstu!");
+	}
 }
 function smallText() {
-	fontSize -= 5;
-	p.style.fontSize = fontSize + "px";
+	if (fontSize <= 5) {
+		alert("Nie można bardziej zmniejszyć tekstu!");
+	} else {
+		fontSize -= 5;
+		p.style.fontSize = fontSize + "px";
+	}
 }
 
-function colorText() {
-	p.style.color = colors[1]
-}
+const colorText = () => {
+	const r = Math.floor(Math.random() * 255)
+	const g = Math.floor(Math.random() * 255)
+	const b = Math.floor(Math.random() * 255)
+
+
+	p.style.color = `rgb(${r},${g},${b})`
+};
 
 sizeUp.addEventListener("click", bigText);
 sizeDown.addEventListener("click", smallText);
