@@ -12,6 +12,14 @@ body {
 	font-size: 1.6rem;
 }
 
+// FONTS
+// font-family: 'Beau Rivage', cursive;
+// font-family: 'Estonia', cursive;
+// font-family: 'Italianno', cursive;
+// font-family: 'Moon Dance', cursive;
+// font-family: "Poppins", sans-serif;
+// font-family: "Tangerine", cursive;
+
 .hero-shadow {
 	position: absolute;
 	top: 0;
@@ -20,6 +28,21 @@ body {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: -1;
+}
+
+.top-hero {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	z-index: 0;
+}
+.top-hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 3rem;
+	text-transform: uppercase;
 }
 
 // Navigacja
@@ -37,9 +60,9 @@ div.navbar-nav {
 .fa {
 	background-color: #fff;
 }
-.navLogo{
+.navLogo {
 	border: 1.5px #8a846d solid;
-	opacity: .4;
+	opacity: 0.2;
 }
 .logoText {
 	font-family: "Tangerine", cursive;
@@ -49,6 +72,21 @@ div.navbar-nav {
 .navbar-toggler {
 	font-size: 3rem;
 }
+// MAIN LOGO
+
+.mainLogoBox {
+	padding-top: 15px;
+	text-align: center;
+	font-family: "Italianno", cursive;
+}
+h2 {
+	font-size: 7rem;
+	}
+
+h3.logoName {
+	font-size: 5rem;
+}
+
 
 // HEADER
 
@@ -56,6 +94,72 @@ header {
 	font-size: 1.5rem;
 }
 
+// Home
+
+.home-boxes {
+	padding: 3em 0;
+	background-color: #f7f1dc31;
+}
+.home-box i {
+	font-size: 3rem;
+	color: #a59d80;
+}
+.home-box h3 {
+	font-size: 2.2rem;
+}
+.home-box p {
+	font-size: 1.5rem;
+}
+
+// ABOUT Me
+
+.aboutme-info {
+	background-color: #a59d8031;
+}
+.aboutme-info .container {
+	padding: 2em 0.5em;
+}
+.aboutme-text {
+	padding: 1.8em;
+}
+.aboutme-text h3 {
+	margin-bottom: 0.5em;
+	font-size: 2.6rem;
+	font-weight: bold;
+	text-decoration: underline #8a846d;
+	text-transform: uppercase;
+}
+.aboutme-text-right {
+	text-align: right;
+}
+.aboutme-img-mobile {
+	height: 400px;
+	width: 300px;
+	object-fit: cover;
+}
+
+// FOOTER
+
+footer {
+	background-color: #e4e0d2;
+}
+.footerText {
+	font-family: "Tangerine", cursive;
+	font-size: 2.2rem;
+	margin-left: 4px;
+}
+a.footerSocials,
+a.footerSocials:visited {
+	margin: 0.1em;
+	font-size: 1.8rem;
+	color: #8a846d;
+}
+a.footerSocials:hover {
+	color: #8a846d73;
+}
+.footerEmail {
+	font-size: 1.2rem;
+}
 .carousel-item {
 	position: relative;
 	height: 400px;
@@ -64,6 +168,38 @@ header {
 	z-index: 0;
 }
 
+
+@media (min-width: 600px) {
+	.aboutme-info .container {
+		padding: 0;
+	}
+	.aboutme-shadow {
+		box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+	}
+	.aboutme-text {
+		padding: 5em 0;
+		transform: skew(-7deg);
+	}
+	.aboutme-text-left {
+		padding-right: 2em;
+		text-align: right;
+	}
+	.aboutme-text-right {
+		padding-left: 2em;
+		text-align: left;
+	}
+	.aboutme-img {
+		height: auto;
+		transform: skew(-7deg);
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.carousel-item {
+		height: 700px;
+	}
+}
 .carousel-img-one {
 	background-image: url(../media/Header/MagdaBusiness.png);
 }
@@ -72,10 +208,4 @@ header {
 }
 .carousel-img-three {
 	background-image: url(../media/Header/WomanSession.png);
-}
-
-@media (min-width: 1200px) {
-	.carousel-item {
-		height: 700px;
-	}
 }
