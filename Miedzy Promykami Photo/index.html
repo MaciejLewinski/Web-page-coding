@@ -22,6 +22,9 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
 			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Estonia&family=Italianno&family=Moon+Dance&display=swap"
+			rel="stylesheet" />
 		<!-- ------------------------------------- -->
 		<script
 			src="https://kit.fontawesome.com/df6568d5e5.js"
@@ -36,9 +39,8 @@
 						class="navLogo"
 						src="/media/NavLogo.png"
 						alt="logo prezentujące lilię" />
-					<span class="logoText">Justyna Marciniszyn-Lewinska</span></a
-				>
-
+					<span class="logoText">Justyna Marciniszyn-Lewinska</span>
+				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -54,7 +56,7 @@
 						<a class="nav-link px-lg-3 active" href="#home">Home</a>
 						<a class="nav-link px-lg-3" href="#Omnie">O mnie</a>
 						<a class="nav-link px-lg-3" href="#realizacje">Realizacje</a>
-						<a class="nav-link px-lg-3" href="#Wspomnienia">Projekty</a>
+						<a class="nav-link px-lg-3" href="#kindwords">Kind words</a>
 						<a class="nav-link px-lg-3" href="#blog">Blog</a>
 						<a class="nav-link" href="#oferta">Poznaj ofertę</a>
 						<a class="nav-link" href="#kontakt">Kontakt</a>
@@ -64,10 +66,12 @@
 		</nav>
 
 		<header>
-			<img
-				src="/media/mainLogo.png"
-				class="img-fluid mx-auto d-block"
-				alt="Między Promykami Fotografia Justyna Marciniszyn-Lewińska" />
+			<section class="mainLogoBox aboutme-shadow">
+				<div class="container">
+					<h2>Między Promykami Fotografia</h2>
+					<h3 class="logoName">Justyna Marciniszyn-Lewińska</h3>
+				</div>
+			</section>
 			<div id="carouselExampleCaptions" class="carousel slide">
 				<div class="carousel-indicators">
 					<button
@@ -98,7 +102,7 @@
 								wizerunkowej sprawią, że będziesz wyglądać profesjonalnie!
 							</p>
 						</div>
-						<div class="hero-shadow"></div>
+						<div class="hero-shadow aboutme-shadow"></div>
 					</div>
 					<div class="carousel-item carousel-img-two">
 						<div
@@ -139,6 +143,93 @@
 				</button>
 			</div>
 		</header>
+
+		<main>
+			<section class="home-boxes aboutme-shadow">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-solid fa-handshake"></i>
+							<h3>Oferta i umowa</h3>
+							<p class="m-0">
+								Przygotuję dla Ciebie spersonalizowaną ofertę, omawiając
+								większość zaganień sesji. Po akceptacji następuje podpisanie
+								umowy.
+							</p>
+						</div>
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-sharp fa-solid fa-camera-retro"></i>
+							<h3>Sesja fotograficzna</h3>
+							<p class="m-0">
+								W zależności od oferty, spotykamy się na sesji zdjęciowej.
+							</p>
+						</div>
+						<div class="col-md-4 home-box mb-5 mb-md-0">
+							<i class="fa-sharp fa-solid fa-panorama"></i>
+							<h3>Obróbka zdjęc</h3>
+							<p class="m-0">
+								Czasochłonny proces selekcji zdjęc i wydobycia z nich co
+								najlepsze.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="top-hero aboutMe-hero">
+				<p class="top-hero-text text-light">O Mnie</p>
+				<div class="hero-shadow"></div>
+			</section> -->
+
+			<section class="aboutme-info aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="row m-0 justify-content-center">
+						<div class="col-lg-3 aboutme-text about me-text-left">
+							<h3>Moja pasja</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Deserunt debitis commodi in officia praesentium hic et facilis
+								ipsum quibusdam omnis.
+							</p>
+						</div>
+						<img
+							src="./media/siteimages/Justyna.jpg"
+							alt="Zdjęcie profilowe Justyny"
+							class="d-lg-none aboutme-img-mobile" />
+						<img src="./media/siteimages/Justyna.jpg" alt="Zdjęcie profilowe
+						Justyny" class="d-none d-lg-block col-lg-4 aboutme-img"">
+						<div class="col-lg-3 aboutme-text aboutme-text-right">
+							<h3>Moje cele</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Deserunt debitis commodi in officia praesentium hic et facilis
+								ipsum quibusdam omnis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p class="py-4 mb-0 text-center">
+				&copy;
+				<span class="footerText">2023 Justyna Marciniszyn-Lewinska</span>
+				<span class="footerSocials"
+					>||
+					<a
+						class="footerSocials"
+						href="https://www.facebook.com/justyna.marciniszyn"
+						><i class="fa-brands fa-square-facebook"></i
+					></a>
+					<a
+						class="footerSocials"
+						href="https://www.instagram.com/miedzy_promykami_fotografia/"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					||
+					<i class="fa-regular fa-envelope"></i> </span
+				><span class="footerEmail">miedzypromykami.fotografia@gmail.com</span>
+			</p>
+		</footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script
