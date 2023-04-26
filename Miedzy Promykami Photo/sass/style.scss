@@ -11,6 +11,11 @@ body {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.6rem;
 }
+h3.subpage-head {
+	font-family: "Italianno", cursive;
+	font-size: 5rem;
+	text-align: center;
+}
 
 // FONTS
 // font-family: 'Beau Rivage', cursive;
@@ -77,16 +82,16 @@ div.navbar-nav {
 .mainLogoBox {
 	padding-top: 15px;
 	text-align: center;
-	font-family: "Italianno", cursive;
+	font-family: 'Italianno', cursive;
+	background-color: #b4b2a831;
 }
 h2 {
 	font-size: 7rem;
-	}
+}
 
 h3.logoName {
 	font-size: 5rem;
 }
-
 
 // HEADER
 
@@ -130,12 +135,86 @@ header {
 	text-transform: uppercase;
 }
 .aboutme-text-right {
+	// margin-top: 300px;
 	text-align: right;
+}
+h3.aboutme-down {
+	margin-top: 120px;
+}
+.aboutme-leftimg img {
+	margin-top: 25px;
+	height: 280px;
+	width: 200px;
+	box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.4);
 }
 .aboutme-img-mobile {
 	height: 400px;
 	width: 300px;
 	object-fit: cover;
+}
+
+// REALIZACJE
+
+// .realization {
+// 	height: 500px;
+// 	width: 100%;
+// 	background-color: #f7f1dc31;
+// }
+.realization-text p {
+	text-align: center;
+	font-size: 1.5rem;
+}
+.realization a {
+	text-decoration: none;
+}
+.realization-hero-box {
+	position: relative;
+	height: 350px;
+	box-shadow: inset -2px 5px 10px -2px rgba(0, 0, 0, 0.4);
+}
+.realization-hero-box p {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 125px;
+	height: 100px;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #ada890;
+	z-index: 0;
+}
+
+.realization-hero-box.box-one {
+	background-image: url(../media/Realizacje/wizerunkowa2.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realization-hero-box.box-two {
+	background-image: url(../media/Realizacje/lovestory.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realization-hero-box.box-three {
+	background-image: url(../media/Realizacje/produktowe.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realization-hero-box.box-four {
+	background-image: url(../media/Realizacje/sensualna.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realization-hero-box.box-five {
+	background-image: url(../media/Realizacje/reportaz.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realization-hero-box.box-six {
+	background-image: url(../media/Realizacje/kobieca.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 // FOOTER
@@ -168,6 +247,26 @@ a.footerSocials:hover {
 	z-index: 0;
 }
 
+@media (max-width: 600px) {
+	.aboutme-leftimg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.aboutme-leftimg img {
+		width: 280px;
+		height: 380px;
+	}
+	.aboutme-img-mobile {
+		margin-top: 20px;
+	}
+	.aboutme-up {
+		text-align: center;
+	}
+	.aboutme-down {
+		text-align: center;
+	}
+}
 
 @media (min-width: 600px) {
 	.aboutme-info .container {
@@ -178,11 +277,7 @@ a.footerSocials:hover {
 	}
 	.aboutme-text {
 		padding: 5em 0;
-		transform: skew(-7deg);
-	}
-	.aboutme-text-left {
-		padding-right: 2em;
-		text-align: right;
+		transform: skew(-5deg);
 	}
 	.aboutme-text-right {
 		padding-left: 2em;
@@ -190,9 +285,8 @@ a.footerSocials:hover {
 	}
 	.aboutme-img {
 		height: auto;
-		transform: skew(-7deg);
+		transform: skew(-5deg);
 	}
-
 }
 
 @media (min-width: 1200px) {
