@@ -17,6 +17,12 @@ h3.subpage-head {
   font-family: "Italianno", cursive;
   font-size: 5rem;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+.subpage-p {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .hero-shadow {
@@ -80,15 +86,18 @@ div.navbar-nav {
   padding-top: 15px;
   text-align: center;
   font-family: "Italianno", cursive;
-  background-color: rgba(180, 178, 168, 0.1921568627);
 }
 
 h2 {
+  margin-top: 30px;
   font-size: 7rem;
+  letter-spacing: 2px;
 }
 
 h3.logoName {
+  margin-bottom: 30px;
   font-size: 5rem;
+  letter-spacing: 2px;
 }
 
 header {
@@ -107,6 +116,8 @@ header {
 
 .home-box h3 {
   font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
 }
 
 .home-box p {
@@ -129,9 +140,8 @@ header {
   margin-bottom: 0.5em;
   font-size: 2.6rem;
   font-weight: bold;
-  -webkit-text-decoration: underline #8a846d;
-          text-decoration: underline #8a846d;
-  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
 }
 
 .aboutme-text-right {
@@ -156,11 +166,6 @@ h3.aboutme-down {
      object-fit: cover;
 }
 
-.realization-text p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
 .realization a {
   text-decoration: none;
 }
@@ -169,6 +174,7 @@ h3.aboutme-down {
   position: relative;
   height: 350px;
   box-shadow: inset -2px 5px 10px -2px rgba(0, 0, 0, 0.4);
+  transition: height 0.5s, box-shadow 0.5s;
 }
 
 .realization-hero-box p {
@@ -183,6 +189,23 @@ h3.aboutme-down {
   font-weight: 500;
   color: #ada890;
   z-index: 0;
+}
+
+.realization-hero-box:hover {
+  height: 380px;
+  box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.6);
+}
+
+.box-two:hover {
+  box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
+}
+
+.box-four:hover {
+  box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
+}
+
+.box-six:hover {
+  box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
 }
 
 .realization-hero-box.box-one {
@@ -221,6 +244,50 @@ h3.aboutme-down {
   background-repeat: no-repeat;
 }
 
+.carousel-kindwords {
+  height: auto;
+}
+
+.carousel-kindwords p {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.blog-one {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url(/media/Blog/polerzepaku.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.description-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  height: 44px;
+  padding: 5px 10px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(50, 50, 50, 0.5);
+  transition: background-color 0.5s;
+}
+
+#theBlogGrid .description-box p {
+  color: #fff;
+  padding-top: 7px;
+  font-size: 15px;
+}
+
+.blogGrid li:hover .animateBottomName {
+  background-color: rgba(228, 224, 210, 0.431372549);
+  width: 100%;
+}
+
 footer {
   background-color: #e4e0d2;
 }
@@ -254,7 +321,7 @@ a.footerSocials:hover {
   z-index: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .aboutme-leftimg {
     display: flex;
     justify-content: center;
@@ -263,6 +330,7 @@ a.footerSocials:hover {
   .aboutme-leftimg img {
     width: 280px;
     height: 380px;
+    box-shadow: none;
   }
   .aboutme-img-mobile {
     margin-top: 20px;
@@ -274,12 +342,14 @@ a.footerSocials:hover {
     text-align: center;
   }
 }
-@media (min-width: 600px) {
-  .aboutme-info .container {
-    padding: 0;
-  }
+@media (min-width: 200px) {
   .aboutme-shadow {
     box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 1200px) {
+  .aboutme-info .container {
+    padding: 0;
   }
   .aboutme-text {
     padding: 5em 0;
@@ -293,8 +363,6 @@ a.footerSocials:hover {
     height: auto;
     transform: skew(-5deg);
   }
-}
-@media (min-width: 1200px) {
   .carousel-item {
     height: 700px;
   }
