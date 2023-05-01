@@ -25,6 +25,8 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Estonia&family=Italianno&family=Moon+Dance&display=swap"
 			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
 		<!-- ------------------------------------- -->
 		<script
 			src="https://kit.fontawesome.com/df6568d5e5.js"
@@ -57,9 +59,9 @@
 						<a class="nav-link px-lg-3" href="#Omnie">O mnie</a>
 						<a class="nav-link px-lg-3" href="#realizacje">Realizacje</a>
 						<a class="nav-link px-lg-3" href="#kindwords">Kind words</a>
-						<a class="nav-link px-lg-3" href="#blog">Blog</a>
-						<a class="nav-link" href="#oferta">Poznaj ofertę</a>
-						<a class="nav-link" href="#kontakt">Kontakt</a>
+						<a class="nav-link px-lg-3" href="#oferta">Poznaj ofertę</a>
+						<a class="nav-link px-lg-3" href="/subpages/blog.html">Blog</a>
+						<a class="nav-link px-lg-3" href="#kontakt">Kontakt</a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +74,8 @@
 					<h3 class="logoName">Justyna Marciniszyn-Lewińska</h3>
 				</div>
 			</section>
-			<div id="carouselExampleCaptions" class="carousel slide">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" 
+			data-bs-pause="hover">
 				<div class="carousel-indicators">
 					<button
 						type="button"
@@ -93,7 +96,7 @@
 						aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner text-light text-center">
-					<div class="carousel-item carousel-img-one active">
+					<div class="carousel-item carousel-img-one active" data-bs-interval="5000" >
 						<div
 							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
 							<p class="display-5">Sesja wizerunkowa</p>
@@ -104,7 +107,7 @@
 						</div>
 						<div class="hero-shadow aboutme-shadow"></div>
 					</div>
-					<div class="carousel-item carousel-img-two">
+					<div class="carousel-item carousel-img-two" data-bs-interval="5000">
 						<div
 							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
 							<p class="display-5">Sesja Narzeczeńska</p>
@@ -114,7 +117,7 @@
 						</div>
 						<div class="hero-shadow"></div>
 					</div>
-					<div class="carousel-item carousel-img-three">
+					<div class="carousel-item carousel-img-three" data-bs-interval="5000">
 						<div
 							class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
 							<p class="display-5">Sesja kobieca</p>
@@ -151,7 +154,7 @@
 						<div class="col-md-4 home-box mb-5 mb-md-0">
 							<i class="fa-solid fa-handshake"></i>
 							<h3>Oferta i umowa</h3>
-							<p class="m-0">
+							<p class="m-0 py-2 border-top">
 								Przygotuję dla Ciebie spersonalizowaną ofertę, omawiając
 								większość zaganień sesji. Po akceptacji następuje podpisanie
 								umowy.
@@ -160,14 +163,14 @@
 						<div class="col-md-4 home-box mb-5 mb-md-0">
 							<i class="fa-sharp fa-solid fa-camera-retro"></i>
 							<h3>Sesja fotograficzna</h3>
-							<p class="m-0">
+							<p class="m-0 py-2 border-top">
 								W zależności od oferty, spotykamy się na sesji zdjęciowej.
 							</p>
 						</div>
 						<div class="col-md-4 home-box mb-5 mb-md-0">
 							<i class="fa-sharp fa-solid fa-panorama"></i>
 							<h3>Obróbka zdjęc</h3>
-							<p class="m-0">
+							<p class="m-0 py-2 border-top">
 								Czasochłonny proces selekcji zdjęc i wydobycia z nich co
 								najlepsze.
 							</p>
@@ -197,13 +200,13 @@
 
 						<div class="col-lg-3 aboutme-text aboutme-text-right">
 							<h3 class="aboutme-up">Moje cele</h3>
-							<p class="aboutme-up">
+							<p class="aboutme-up py-2 border-top border-bottom">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Deserunt debitis commodi in officia praesentium hic et facilis
 								ipsum quibusdam omnis.
 							</p>
 							<h3 class="aboutme-down">Moja pasja</h3>
-							<p class="aboutme-down">
+							<p class="aboutme-down py-2 border-top border-bottom">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Deserunt debitis commodi in officia praesentium hic et facilis
 								ipsum quibusdam omnis.
@@ -217,7 +220,7 @@
 				<div class="container">
 					<div class="py-5 realization-text">
 						<h3 class="subpage-head">Moje realizacje<h3>
-						<p>
+						<p class="subpage-p py-5 border-bottom">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
 							fuga rerum, natus impedit expedita vero in numquam earum
 							accusantium hic tempora veniam. Dicta tempore explicabo quam illo
@@ -261,6 +264,191 @@
 				<p class="mt-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, accusamus.</p>
 				<p class="py-3 text-muted text-center border-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex architecto nesciunt. Consequatur, totam sunt voluptate consequuntur cum atque maiores sed omnis repudiandae non, perspiciatis saepe necessitatibus voluptas vel ipsam.</p>
 			</section>
+			<section class="py-5 kindwords aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="py-5 kindwords-text">
+						<h3 class="subpage-head">Kind Words<h3>
+						<p class="subpage-p pb-5 border-bottom">
+							Co mówią moi klienci?
+						</p>
+					</div>
+				</div>	
+				<div class="container mb-4 p-4">
+					<div id="carouselExample"
+							 class="carousel slide" 
+							 data-bs-ride="carousel" 
+							 data-bs-pause="hover">
+							<div class="carousel-kindwords carousel-inner text-center pb-5 border-bottom">
+								<div class="carousel-item active h-auto"
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis quod porro excepturi iure veritatis.</p>
+									<h5>
+										Gosia
+									</h5>
+								</div>
+								<div class="carousel-item h-auto"
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fugiat impedit saepe animi omnis aliquid modi dicta assumenda, mollitia provident? Quasi quos dicta magnam impedit amet necessitatibus architecto, fuga accusamus?</p>
+									 <h5>
+										Magda
+									</h5>
+								</div>
+								<div class="carousel-item h-auto" 
+									 data-bs-interval="5000">
+									 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil minima ipsa deleniti repudiandae magni molestias impedit facilis delectus architecto tenetur quibusdam numquam libero nisi, optio accusantium expedita illum iste quidem amet deserunt velit! Corrupti suscipit distinctio neque animi veritatis voluptatem mollitia magnam perferendis consequuntur est.</p>
+									 <h5>
+									Ola & Sebastian
+									</h5>
+								</div>
+						</div>
+					</div>
+				</div>		
+			</section>
+		<section class="py-5 offer aboutme-shadow border-top border-bottom">
+				<div class="container">
+					<div class="py-5 offer-text">
+						<h3 class="subpage-head">Poznaj Ofertę<h3>
+						<p class="subpage-p pb-5 border-bottom">
+							Spotkajmy się na wspólnej sesji!
+						</p>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+		</section>
+		<section class="py-5 blog aboutme-shadow border-top border-bottom">
+			<div class="container">
+				<div class="py-5 blog-text">
+					<h3 class="subpage-head">Blog<h3>
+					<p class="subpage-p pb-5 border-bottom">
+						Sprawdź najnowsze wpisy!
+					</p>
+				</div>
+				<div class="container ct-u-paddingTop40 ct-u-paddingBottom100">
+					<div class="row">
+					  <div class="col-md-12 ct-content">
+						<div class="container">
+						  <div class="row">
+							<div class="col-md-12">
+							  <div id="theBlogGrid">
+								<ul class="row blogGrid" id="blogGrid">
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
+									<div class="imgHolder blog-one" onclick="location.href='/about-us/blog/case-studies/building-in-webcorpco-cms-8.stml'">
+									  <!-- <img alt="Zdjęcie pola kwitnącego rzepaku przy zachodzącym słońcu" class="grid-image img-responsive" src="/media/Blog/pole rzepaku.jpg"> -->
+									  <div class="description-box animateBottomName">
+										<p>Uwiecznione pierwsze oznaki wiosny</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="20">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-named-to-inc.-5000.stml'">
+									  <img alt="What's New in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-2.jpg">
+									  <div class="description-box animateBottomName">
+										<p>WebCorpCo Named to Inc. 5000</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="19">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/blog-posts/whats-new-in-webcorpco-cms-8.stml'">
+									  <img alt="WebCorpCo Named to Inc. 5000" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-3.jpg">
+									  <div class="description-box animateBottomName">
+										<p>What's New in WebCorpCo CMS 8</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="18">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
+									  <img alt="WebCorpCo CMS 8 Launches" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-1.jpg">
+									  <div class="description-box animateBottomName">
+										<p>WebCorpCo CMS 8 Launches</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								</ul>
+								<div class="blue-border blog-blue-border"></div>
+								<div class="clearfix"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="container ct-u-paddingTop40 ct-u-paddingBottom100">
+					<div class="row">
+					  <div class="col-md-12 ct-content">
+						<div class="container">
+						  <div class="row">
+							<div class="col-md-12">
+							  <div id="theBlogGrid">
+								<ul class="row blogGrid" id="blogGrid">
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/case-studies/building-in-webcorpco-cms-8.stml'">
+									  <img alt="WebCorpCo CMS 8 Launches" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-1.jpg">
+									  <div class="description-box animateBottomName">
+										<p>Building in WebCorpCo CMS 8</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="20">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-named-to-inc.-5000.stml'">
+									  <img alt="WebCorpCo Named to Inc. 5000" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-3.jpg">
+									  <div class="description-box animateBottomName">
+										<p>WebCorpCo Named to Inc. 5000</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="19">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/blog-posts/whats-new-in-webcorpco-cms-8.stml'">
+									  <img alt="What's New in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-2.jpg">
+									  <div class="description-box animateBottomName">
+										<p>What's New in WebCorpCo CMS 8</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="18">
+									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
+									  <img alt="Building in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-4.jpg">
+									  <div class="description-box animateBottomName">
+										<p>WebCorpCo CMS 8 Launches</p>
+									  </div>
+									</div>
+									<div class="clearfix"></div>
+								  </li>
+								</ul>
+								<div class="blue-border blog-blue-border"></div>
+								<div class="clearfix"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+
+			</div>
+		</section>
+
+
 		</main>
 		<footer class="aboutme-shadow">
 			<p class="py-4 mb-0 text-center">
