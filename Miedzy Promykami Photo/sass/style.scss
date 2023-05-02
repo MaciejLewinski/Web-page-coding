@@ -8,9 +8,15 @@ html {
 	font-size: 62.5%;
 }
 body {
+	position: relative;
 	font-family: "Poppins", sans-serif;
 	font-size: 1.6rem;
 }
+
+[id] {
+	scroll-margin: 72px;
+}
+
 h3.subpage-head {
 	font-family: "Italianno", cursive;
 	font-size: 5rem;
@@ -175,7 +181,7 @@ h3.aboutme-down {
 	position: relative;
 	height: 350px;
 	box-shadow: inset -2px 5px 10px -2px rgba(0, 0, 0, 0.4);
-	transition: height 0.5s, box-shadow 0.5s;
+	transition: height 0.5s, opacity 0.5s;
 }
 .realization-hero-box p {
 	position: absolute;
@@ -191,17 +197,8 @@ h3.aboutme-down {
 	z-index: 0;
 }
 .realization-hero-box:hover {
-	height: 380px;
-	box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.6);
-}
-.box-two:hover {
-	box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
-}
-.box-four:hover {
-	box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
-}
-.box-six:hover {
-	box-shadow: inset 20px 20px 20px 20px rgba(200, 200, 200, 0.3);
+	height: 360px;
+	opacity: 70%;
 }
 
 .realization-hero-box.box-one {
@@ -249,39 +246,118 @@ h3.aboutme-down {
 
 // BLOG
 
-.blog-one {
+.blog-box {
 	position: relative;
-	width: 300px;
+	width: auto;
 	height: 300px;
+	border-radius: 10px;
+	transition: width 0.5s, height 0.5s, opacity 0.5s;
+}
+.blog-one {
 	background-image: url(/media/Blog/polerzepaku.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-radius: 10px;
-	
-	
-	
 }
+.blog-two {
+	background-image: url(/media/Blog/kropledeszczu.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blog-three {
+	background-image: url(/media/Blog/poranek.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blog-four {
+	background-image: url(/media/Blog/spacer.jpg);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .description-box {
 	position: absolute;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	bottom: 0;
-	height: 44px;
+	height: auto;
 	padding: 5px 10px;
 	width: 100%;
-	object-fit: contain;
 	background-color: rgba(50, 50, 50, 0.5);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	transition: background-color 0.5s;
 }
 #theBlogGrid .description-box p {
 	color: #fff;
 	padding-top: 7px;
 	font-size: 15px;
-   }
-   .blogGrid li:hover .animateBottomName {
-	background-color:  #e4e0d26e;
+}
+li.blog-inner {
+	list-style-type: none;
+}
+.blog-box:hover {
+	opacity: 70%;
+}
+.blogGrid li:hover .animateBottomName {
+	background-color: #e4e0d26e;
 	width: 100%;
 }
+
+// KONTAKT
+
+h4.contact {
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+.contact input,
+.contact select,
+.contact textarea {
+	font-size: 1.5rem;
+}
+.contact .btn {
+	padding: 7px;
+	font-size: 1.5rem;
+	background-color: #8a846d;
+	transition: background-color 0.5s;
+}
+.contact .btn:hover {
+	background-color: #8a846da8;
+}
+
+// INSTAGRAM FEED APP
+
+#instafeed-container {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+#instafeed-container img{
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+}
+#instafeed-container-snd {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+#instafeed-container-snd img{
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+}
+button.carousel-control-prev {
+	color: black;
+}
+
 // FOOTER
 
 footer {
@@ -292,7 +368,6 @@ footer {
 	font-size: 2.2rem;
 	margin-left: 4px;
 }
-a.footerSocials,
 a.footerSocials:visited {
 	margin: 0.1em;
 	font-size: 1.8rem;
@@ -312,7 +387,7 @@ a.footerSocials:hover {
 	z-index: 0;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 	.aboutme-leftimg {
 		display: flex;
 		justify-content: center;
@@ -337,6 +412,9 @@ a.footerSocials:hover {
 @media (min-width: 200px) {
 	.aboutme-shadow {
 		box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+	}
+	.blog-box {
+		margin: 5px;
 	}
 }
 
