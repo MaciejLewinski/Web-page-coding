@@ -25,7 +25,8 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Estonia&family=Italianno&family=Moon+Dance&display=swap"
 			rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" 
+		    rel="stylesheet">
 
 		<!-- ------------------------------------- -->
 		<script
@@ -33,8 +34,8 @@
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/css/style.css" />
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg py-3 sticky-top">
+	<body data-bs-spy="scroll" data-bs-target="navbar-scroll">
+		<nav class="navbar navbar-expand-lg py-3 sticky-top" id="navbar-scroll">
 			<div class="container">
 				<a class="navbar-brand" href="#"
 					><img
@@ -60,7 +61,7 @@
 						<a class="nav-link px-lg-3" href="#realizacje">Realizacje</a>
 						<a class="nav-link px-lg-3" href="#kindwords">Kind words</a>
 						<a class="nav-link px-lg-3" href="#oferta">Poznaj ofertę</a>
-						<a class="nav-link px-lg-3" href="/subpages/blog.html">Blog</a>
+						<a class="nav-link px-lg-3" href="#blog">Blog</a>
 						<a class="nav-link px-lg-3" href="#kontakt">Kontakt</a>
 					</div>
 				</div>
@@ -68,7 +69,7 @@
 		</nav>
 
 		<header>
-			<section class="mainLogoBox aboutme-shadow">
+			<section id="home" class="mainLogoBox aboutme-shadow">
 				<div class="container">
 					<h2>Między Promykami Fotografia</h2>
 					<h3 class="logoName">Justyna Marciniszyn-Lewińska</h3>
@@ -178,16 +179,14 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="top-hero aboutMe-hero">
-				<p class="top-hero-text text-light">O Mnie</p>
-				<div class="hero-shadow"></div>
-			</section> -->
+			
+	<!-- ABOUT ME -->	
 
-			<section class="aboutme-info aboutme-shadow border-top border-bottom">
+			<section id="Omnie" class="aboutme-info aboutme-shadow border-top border-bottom">
 				<div class="container">
 					<div class="row m-0 justify-content-center">
 						<div class="col-lg-3 aboutme-img">
-							<div class="aboutme-leftimg aboutme-up"><img src="./media/siteimages/justyna.JPG" alt=""></div>
+							<div class="aboutme-leftimg aboutme-up"><img src="./media/siteimages/justynakrolik.jpg" alt=""></div>
 							<div class="aboutme-leftimg aboutme-down"><img src="./media/siteimages/justyna2.JPG" alt=""></div>
 						</div>
 			
@@ -216,7 +215,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="py-5 realization aboutme-shadow border-top border-bottom">
+
+	<!-- MOJE REALIZACJE -->
+
+			<section id="realizacje" class="py-5 realization aboutme-shadow border-top border-bottom">
 				<div class="container">
 					<div class="py-5 realization-text">
 						<h3 class="subpage-head">Moje realizacje<h3>
@@ -264,7 +266,10 @@
 				<p class="mt-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, accusamus.</p>
 				<p class="py-3 text-muted text-center border-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex architecto nesciunt. Consequatur, totam sunt voluptate consequuntur cum atque maiores sed omnis repudiandae non, perspiciatis saepe necessitatibus voluptas vel ipsam.</p>
 			</section>
-			<section class="py-5 kindwords aboutme-shadow border-top border-bottom">
+
+	<!-- KIND WORDS -->
+
+			<section id="kindwords" class="py-5 kindwords aboutme-shadow border-top border-bottom">
 				<div class="container">
 					<div class="py-5 kindwords-text">
 						<h3 class="subpage-head">Kind Words<h3>
@@ -304,7 +309,10 @@
 					</div>
 				</div>		
 			</section>
-		<section class="py-5 offer aboutme-shadow border-top border-bottom">
+
+	<!-- OFERTA -->
+
+		<section id="oferta" class="py-5 offer aboutme-shadow border-top border-bottom">
 				<div class="container">
 					<div class="py-5 offer-text">
 						<h3 class="subpage-head">Poznaj Ofertę<h3>
@@ -326,7 +334,10 @@
 
 				</div>
 		</section>
-		<section class="py-5 blog aboutme-shadow border-top border-bottom">
+
+	<!-- BLOG -->
+
+		<section id="blog" class="py-5 blog aboutme-shadow border-top border-bottom">
 			<div class="container">
 				<div class="py-5 blog-text">
 					<h3 class="subpage-head">Blog<h3>
@@ -334,7 +345,7 @@
 						Sprawdź najnowsze wpisy!
 					</p>
 				</div>
-				<div class="container ct-u-paddingTop40 ct-u-paddingBottom100">
+				<div class="blog container ct-u-paddingTop40 ct-u-paddingBottom100">
 					<div class="row">
 					  <div class="col-md-12 ct-content">
 						<div class="container">
@@ -343,8 +354,8 @@
 							  <div id="theBlogGrid">
 								<ul class="row blogGrid" id="blogGrid">
 								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
-									<div class="imgHolder blog-one" onclick="location.href='/about-us/blog/case-studies/building-in-webcorpco-cms-8.stml'">
-									  <!-- <img alt="Zdjęcie pola kwitnącego rzepaku przy zachodzącym słońcu" class="grid-image img-responsive" src="/media/Blog/pole rzepaku.jpg"> -->
+									<div class="imgHolder blog-box blog-one" onclick="location.href=''">
+									 
 									  <div class="description-box animateBottomName">
 										<p>Uwiecznione pierwsze oznaki wiosny</p>
 									  </div>
@@ -352,28 +363,28 @@
 									<div class="clearfix"></div>
 								  </li>
 								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="20">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-named-to-inc.-5000.stml'">
-									  <img alt="What's New in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-2.jpg">
+									<div class="imgHolder blog-box blog-two" onclick="location.href=''">
+									 
 									  <div class="description-box animateBottomName">
-										<p>WebCorpCo Named to Inc. 5000</p>
+										<p>Przyroda w Ogrodzie Botanicznym</p>
 									  </div>
 									</div>
 									<div class="clearfix"></div>
 								  </li>
 								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="19">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/blog-posts/whats-new-in-webcorpco-cms-8.stml'">
-									  <img alt="WebCorpCo Named to Inc. 5000" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-3.jpg">
+									<div class="imgHolder blog-box blog-three" onclick="location.href=''">
+									  
 									  <div class="description-box animateBottomName">
-										<p>What's New in WebCorpCo CMS 8</p>
+										<p>Poranek w Chrząstawie Małej</p>
 									  </div>
 									</div>
 									<div class="clearfix"></div>
 								  </li>
 								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="18">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
-									  <img alt="WebCorpCo CMS 8 Launches" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-1.jpg">
+									<div class="imgHolder blog-box blog-four" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
+									 
 									  <div class="description-box animateBottomName">
-										<p>WebCorpCo CMS 8 Launches</p>
+										<p>Spacer z mężem</p>
 									  </div>
 									</div>
 									<div class="clearfix"></div>
@@ -388,60 +399,95 @@
 					  </div>
 					</div>
 				  </div>
-				  <div class="container ct-u-paddingTop40 ct-u-paddingBottom100">
-					<div class="row">
-					  <div class="col-md-12 ct-content">
-						<div class="container">
-						  <div class="row">
-							<div class="col-md-12">
-							  <div id="theBlogGrid">
-								<ul class="row blogGrid" id="blogGrid">
-								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/case-studies/building-in-webcorpco-cms-8.stml'">
-									  <img alt="WebCorpCo CMS 8 Launches" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-1.jpg">
-									  <div class="description-box animateBottomName">
-										<p>Building in WebCorpCo CMS 8</p>
-									  </div>
-									</div>
-									<div class="clearfix"></div>
-								  </li>
-								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="20">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-named-to-inc.-5000.stml'">
-									  <img alt="WebCorpCo Named to Inc. 5000" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-3.jpg">
-									  <div class="description-box animateBottomName">
-										<p>WebCorpCo Named to Inc. 5000</p>
-									  </div>
-									</div>
-									<div class="clearfix"></div>
-								  </li>
-								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="19">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/blog-posts/whats-new-in-webcorpco-cms-8.stml'">
-									  <img alt="What's New in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-2.jpg">
-									  <div class="description-box animateBottomName">
-										<p>What's New in WebCorpCo CMS 8</p>
-									  </div>
-									</div>
-									<div class="clearfix"></div>
-								  </li>
-								  <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="18">
-									<div class="imgHolder" onclick="location.href='/about-us/blog/news/webcorpco-cms-8-launches.stml'">
-									  <img alt="Building in WebCorpCo CMS 8" class="grid-image img-responsive" src="http://www.webcorpco.com/core/fileparse.php/73/urlt/blog-4.jpg">
-									  <div class="description-box animateBottomName">
-										<p>WebCorpCo CMS 8 Launches</p>
-									  </div>
-									</div>
-									<div class="clearfix"></div>
-								  </li>
-								</ul>
-								<div class="blue-border blog-blue-border"></div>
-								<div class="clearfix"></div>
-							  </div>
-							</div>
-						  </div>
+				
+
+
+
+			</div>
+		</section>
+		
+	<!-- KONTAKT -->
+
+		<section id="kontakt" class="py-5 blog aboutme-shadow border-top border-bottom">
+			<div class="container">
+				<div class="py-5 blog-text">
+					<h3 class="subpage-head">Kontakt<h3>
+					<p class="subpage-p pb-5 border-bottom">
+						Wypełnij formularz, napisz E-mail lub zadzwoń!
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-lg-4">
+						<div class="border p-5 mb-4 text-center">
+							<h4 class="contact fw-bold">Dane kontaktowe</h4>
+							
+							<p class="mt-4 fw-bold text-uppercase">Adres</p>
+							<p>ul. Sąsiedzka 33B</p>
+							<p>55-003 Chrząstawa Mała</p>
+							<p class="mt-4 fw-bold text-uppercase">Telefon</p>
+							<p>+48 570 971 398</p>
+							<p class="mt-4 fw-bold text-uppercase">e-mail</p>
+							<p>miedzypromykami.fotografia</p>
+							<p>@gmail.com</p>
+
 						</div>
-					  </div>
 					</div>
-				  </div>
+					<div class="col-md-7 col-lg-8">
+						<div class="border p-5 text-center">
+							<h4 class="contact fw-bold">Formularz kontaktowy</h4>
+							<form class="mt-5">
+								<div class="contact row">
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Imię i Nazwisko</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Adres mailowy</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Telefon</label>
+											<input type="tel" class="form-control" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group mb-4">
+											<label>Jaka sesja Cię interesuje</label>
+											<select class="form-select">
+												<option selected></option>
+												<option>Sesja wizerunkowa</option>
+												<option>Love Story</option>
+												<option>Produktowa</option>
+												<option>Kobieca/Sensualna</option>
+												<option>Reportaż</option>
+												<option>Art Project</option>
+												<option>Więcej niż jedna</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<label>Wpisz treść wiadomości</label>
+										<textarea class="form-control" rows="6"></textarea>
+									</div>
+									<div class="mt-3">
+										<button class="btn btn-secondary">Wysyłam!</button>
+									</div>
+								</div>
+							
+							</form>
+
+						</div>
+					</div>
+
+
+
+				</div>
+
 
 
 
@@ -449,7 +495,33 @@
 		</section>
 
 
+<!-- INSTAGRAM -->
+
+
+		<section class="py-5 aboutme-shadow border-top border-bottom">
+			<h3 class="subpage-head">Instagram Feeds</h3>
+			<div class="container mb-4 p-4">
+				<div id="carouselExample"
+						 class="carousel slide" 
+						 data-bs-ride="carousel" 
+						 data-bs-pause="hover">
+						<div class="carousel-instagram carousel-inner text-center pb-5 border-bottom">
+							<div class="carousel-item active h-auto"
+								 data-bs-interval="5000">
+								 <div id="instafeed-container"></div>	
+							</div>
+							<div class="carousel-item h-auto"
+								 data-bs-interval="5000">
+								 <div id="instafeed-container-snd"></div>	
+							</div>
+
+				</div>
+			</div
+		</section>
 		</main>
+
+<!-- STOPKA -->
+
 		<footer class="aboutme-shadow">
 			<p class="py-4 mb-0 text-center">
 				&copy;
@@ -472,6 +544,8 @@
 			</p>
 		</footer>
 
+	<!-- SCRIPTS -->	
+
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -485,6 +559,7 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
 			integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
 			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 
 		<script src="/js/script.js"></script>
 	</body>
