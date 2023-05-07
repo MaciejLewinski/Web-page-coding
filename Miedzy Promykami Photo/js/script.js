@@ -15,7 +15,7 @@ let userFeed = new Instafeed({
     resolution: 'low_resolution',
     // Limit pokazywanych Feedsów 
     limit: 4,               
-    accessToken: 'IGQVJWWnRuQkkyc0R0UkxyWWpMYUhESzJGWjcxWmg3RnJJbGNRdzhEU3JRa3hMQzNUX01NSXpRZADdndE1fVmFPSXRXcVFQbTRhVDl4aDd6bHNPdDhXR2lGWEF4X1F6QVRvNi1qY0ZAJdTlLSDJtYkRTNgZDZD'
+    accessToken: 'API KEY'
 });
 
 userFeed.run()
