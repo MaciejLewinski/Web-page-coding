@@ -1,3 +1,6 @@
+@import './realizationSubpages';
+
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -68,6 +71,10 @@ nav {
 	font-size: 1.5rem;
 }
 nav.navbar {
+	background-color: #e4e0d2d8;
+	transition: background-color 0.5s;
+}
+nav.navbar:hover{
 	background-color: #e4e0d2;
 }
 div.navbar-nav {
@@ -170,6 +177,7 @@ h3.aboutme-down {
 	height: 400px;
 	width: 300px;
 	object-fit: cover;
+	
 }
 
 // REALIZACJE
@@ -199,6 +207,15 @@ h3.aboutme-down {
 .realization-hero-box:hover {
 	height: 360px;
 	opacity: 70%;
+}
+a.realizationSocials {
+	font-size: 1.5rem;
+}
+a.realizationSocials:visited {
+	color: #8a846d;
+}
+a.realizationSocials:hover {
+	color: #8a846d73;
 }
 
 .realization-hero-box.box-one {
@@ -243,6 +260,23 @@ h3.aboutme-down {
 }
 
 // POZNAJ OFERTĘ
+
+.offer .btn {
+	margin: 5px 0 5px 1px;
+	padding: 7px;
+	font-size: 1.5rem;
+	background-color: #8a846d;
+	transition: background-color 0.5s;
+}
+.offer .btn:hover {
+	background-color: #8a846da8;
+}
+a.card-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+
 
 // BLOG
 
@@ -328,35 +362,35 @@ h4.contact {
 
 // INSTAGRAM FEED APP
 
-#instafeed-container {
-	position: relative;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	height: auto;
-}
+// #instafeed-container {
+// 	position: relative;
+// 	display: inline-flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: auto;
+// }
 
-#instafeed-container img{
-	padding: 10px;
-	width: 250px;
-	height: 250px;
-}
-#instafeed-container-snd {
-	position: relative;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	height: auto;
-}
+// #instafeed-container img{
+// 	padding: 10px;
+// 	width: 250px;
+// 	height: 250px;
+// }
+// #instafeed-container-snd {
+// 	position: relative;
+// 	display: inline-flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: auto;
+// }
 
-#instafeed-container-snd img{
-	padding: 10px;
-	width: 250px;
-	height: 250px;
-}
-button.carousel-control-prev {
-	color: black;
-}
+// #instafeed-container-snd img{
+// 	padding: 10px;
+// 	width: 250px;
+// 	height: 250px;
+// }
+// button.carousel-control-prev {
+// 	color: black;
+// }
 
 // FOOTER
 
@@ -376,6 +410,9 @@ a.footerSocials:visited {
 a.footerSocials:hover {
 	color: #8a846d73;
 }
+i.footer {
+	color: #8a846d;
+}
 .footerEmail {
 	font-size: 1.2rem;
 }
@@ -387,7 +424,12 @@ a.footerSocials:hover {
 	z-index: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+	nav {
+	font-size: 1.3rem;
+ }
+}
+@media (max-width: 992px) {
 	.aboutme-leftimg {
 		display: flex;
 		justify-content: center;
@@ -398,6 +440,7 @@ a.footerSocials:hover {
 		height: 380px;
 		box-shadow: none;
 	}
+	
 	.aboutme-img-mobile {
 		margin-top: 20px;
 	}
@@ -418,7 +461,7 @@ a.footerSocials:hover {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	.aboutme-info .container {
 		padding: 0;
 	}
