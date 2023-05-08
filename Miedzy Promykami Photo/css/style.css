@@ -1,3 +1,32 @@
+.imageSession-box-magda {
+  background-image: url(../media/Realizacje/Wizerunkowa/Magda.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imageSession-box-karolina {
+  background-image: url(../media/Realizacje/Wizerunkowa/karolina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imageSession-box-maciej {
+  background-image: url(../media/Realizacje/Wizerunkowa/Maciej.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60%;
+}
+
+div.magda {
+  padding: 0;
+}
+
+.magda img {
+  padding: 17px;
+  width: auto;
+  height: 300px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,6 +90,11 @@ nav {
 }
 
 nav.navbar {
+  background-color: rgba(228, 224, 210, 0.8470588235);
+  transition: background-color 0.5s;
+}
+
+nav.navbar:hover {
   background-color: #e4e0d2;
 }
 
@@ -201,6 +235,18 @@ h3.aboutme-down {
   opacity: 70%;
 }
 
+a.realizationSocials {
+  font-size: 1.5rem;
+}
+
+a.realizationSocials:visited {
+  color: #8a846d;
+}
+
+a.realizationSocials:hover {
+  color: rgba(138, 132, 109, 0.4509803922);
+}
+
 .realization-hero-box.box-one {
   background-image: url(../media/Realizacje/wizerunkowa2.JPG);
   background-size: cover;
@@ -244,6 +290,23 @@ h3.aboutme-down {
 .carousel-kindwords p {
   font-size: 1.8rem;
   font-family: "Playfair Display", serif;
+}
+
+.offer .btn {
+  margin: 5px 0 5px 1px;
+  padding: 7px;
+  font-size: 1.5rem;
+  background-color: #8a846d;
+  transition: background-color 0.5s;
+}
+
+.offer .btn:hover {
+  background-color: rgba(138, 132, 109, 0.6588235294);
+}
+
+a.card-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 .blog-box {
@@ -335,38 +398,6 @@ h4.contact {
   background-color: rgba(138, 132, 109, 0.6588235294);
 }
 
-#instafeed-container {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-#instafeed-container img {
-  padding: 10px;
-  width: 250px;
-  height: 250px;
-}
-
-#instafeed-container-snd {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-#instafeed-container-snd img {
-  padding: 10px;
-  width: 250px;
-  height: 250px;
-}
-
-button.carousel-control-prev {
-  color: black;
-}
-
 footer {
   background-color: #e4e0d2;
 }
@@ -387,6 +418,10 @@ a.footerSocials:hover {
   color: rgba(138, 132, 109, 0.4509803922);
 }
 
+i.footer {
+  color: #8a846d;
+}
+
 .footerEmail {
   font-size: 1.2rem;
 }
@@ -399,7 +434,12 @@ a.footerSocials:hover {
   z-index: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  nav {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 992px) {
   .aboutme-leftimg {
     display: flex;
     justify-content: center;
@@ -428,7 +468,7 @@ a.footerSocials:hover {
     margin: 5px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .aboutme-info .container {
     padding: 0;
   }
