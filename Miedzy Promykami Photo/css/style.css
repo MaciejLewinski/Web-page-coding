@@ -17,14 +17,12 @@
   background-position: 60%;
 }
 
-div.magda {
-  padding: 0;
+.magda {
+  transition: opacity 0.5s;
 }
 
-.magda img {
-  padding: 17px;
-  width: auto;
-  height: 300px;
+.magda:hover {
+  opacity: 70%;
 }
 
 * {
